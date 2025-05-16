@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.searchBar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputCity {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: larger;
+}
+
+.searchBox {
+    height: 75%;
+    width: 70%;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.searchIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mainBody {
+    height: 90vh;
+    display: flex;
+}
+
+.leftMain {
+    width: 30%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftTop {
+    height: 45%;
+    border-radius: 5px;
+    background: rgba(212 , 212 , 212 , 0.35);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBottom {
+    height: 45%;
+    border-radius: 5px;
+    background: rgba(212 , 212 , 212 , 0.35);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+}
+
+.rightMain {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.rightTop {
+    height: 27%;
+    display: flex;
+    gap: 55px;
+}
+
+.rightMiddle {
+    height: 28%;
+    display: flex;
+    gap: 25px;
+}
+
+.rightBottom {
+    height: 30%;
+    display: flex;
+    gap: 20px;
+}
+
+.date img , .time img {
+    width: 18px;
+    height: 20px;
+}
+
+.date , .time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+h6 , h5{
+    color: white;
+}
+
+.cloud {
+    width: 18px;
+    height: 20px;
+}
+
+.dayOne , .dayTwo , .dayThree , .dayFour , .dayFive {
+    display: flex;
+    align-items: center;
+    font-size: 5px;
+    gap: 50px;
+}
+
+.rightTop1 , .rightTop2 , .rightTop3 , .rightTop4 {
+    height: 100%;
+    width: 21%;
+    border-radius: 5px;
+    background: rgba(212 , 212 , 212 , 0.35);
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightMid1 , .rightMid2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(212 , 212 , 212 , 0.35);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightMid1 {
+    gap: 20px;
+}
+
+.rightMid2 {
+    gap: 5px;
+}
+
+.rightBottom1 , .rightBottom2 , .rightBottom3 , .rightBottom4 , .rightBottom5 , .rightBottom6 {
+    height: 100%;
+    width: 16%;
+    border-radius: 5px;
+    background: rgba(212 , 212 , 212 , 0.35);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.today {
+    color: white;
+}
+
+.wind , .aqi {
+    height: 40px;
+    width: 40px;
+}
+
+.rightMid1Info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun , .moon {
+    width: 75px;
+    height: 75px;
+}
+
+.rightMid2Info {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.clouds {
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .searchBar {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .searchBox {
+        width: 95%;
+    }
+
+    .searchIcon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .leftTop {
+        width: 93vw;
+    }
+
+    .leftBottom {
+        width: 93vw;
+    }
+
+    .dayOne , .dayTwo , .dayThree , .dayFour , .dayFive {
+        gap: 40px;
+    }
+
+    .leftMain {
+        gap: 10px;
+    }
+
+    .mainBody {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rightMain {
+        gap: 10px;
+    }
+
+    .rightTop {
+        width: 93vw;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightTop1 , .rightTop2 , .rightTop3 , .rightTop4 {
+        width: 100%;
+    }
+
+    .rightMiddle {
+        flex-direction: column;
+    }
+
+    .rightBottom {
+        flex-direction: column;
+    }
+
+    .rightMid1 {
+        width: 93vw;
+        gap: 0px;
+    }
+
+    .rightMid1Info {
+        justify-content: space-evenly;
+    }
+
+    .rightMid2 {
+        width: 93vw;
+    }
+
+    .sun , .moon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rightMiddle {
+        gap: 10px;
+    }
+
+    .clouds {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightBottom {
+        width: 93vw;
+        flex-direction: row;
+        gap: 5px;
+    }
+}
